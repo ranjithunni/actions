@@ -1,7 +1,7 @@
 name: GitHub action YAML for cowsay
 
 on: 
-  push
+  workflow_dispatch:
 
 jobs:
   myascii:
