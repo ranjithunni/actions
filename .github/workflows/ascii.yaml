@@ -6,7 +6,7 @@ on:
 jobs:
   myascii:
     name: cowsay command 
-    uses: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: installing cowsay command
         run: sudo apt-get install -y cowsay
