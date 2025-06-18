@@ -11,7 +11,7 @@ jobs:
       - name: reading the repo files 
         uses: actions/checkout@v4
       - name: listing files 
-        uses: |
+        run: |
               echo "welcome to GitHub Actions"
               ls -la
               cat index.html
