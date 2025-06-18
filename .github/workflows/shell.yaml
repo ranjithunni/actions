@@ -1,0 +1,15 @@
+name : shell yaml 
+on : 
+  push : 
+
+jobs : 
+  my_shell : 
+    name : configuring cowsay 
+    runs-on : ubuntu-latest
+    steps : 
+      - name : checkout repo 
+        run : actions/checkout@v4
+      - name : using shell script 
+        run : | 
+                chmod +x cowsayshellscript.sh
+                ./cowsayshellscript.sh
