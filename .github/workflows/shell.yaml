@@ -1,6 +1,6 @@
 name : shell yaml 
 on : 
-  push : 
+  workflow_dispatch 
 
 jobs : 
   my_shell : 
@@ -8,7 +8,7 @@ jobs :
     runs-on : ubuntu-latest
     steps : 
       - name : checkout repo 
-        run : actions/checkout@v4
+        uses : actions/checkout@v4
       - name : using shell script 
         run : | 
                 chmod +x cowsayshellscript.sh
